@@ -1,0 +1,182 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Mitr', sans-serif;
+	font-family: 'Prompt', sans-serif;
+	font-size: 16px;
+}
+
+.mit {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.font-12 {
+	font-size: 12px;
+}
+
+/*  */
+.thx {
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 15px;
+}
+
+/*  */
+
+* a {
+	text-decoration: none;
+	color: #ffffff;
+	transition: font-size 0.5s ease-out;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #ffffff;
+	/* background: #032939; */
+	/* border-radius: 3px; */
+	/* text-decoration: underline; */
+	font-size: 20px;
+	transition: font-size 0.3s ease-in;
+}
+
+* li {
+	list-style: none;
+}
+
+body {
+	background-color: #ffffff;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+
+header {
+	background-color: #3a5a40;
+	padding: 2px 0;
+	position: relative;
+	border-bottom: solid 1px lightgray;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bar {
+	display: none;
+}
+
+.logo a {
+	font-size: 1.625rem;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+nav ul li a {
+	font-size: 0.875rem;
+}
+
+@media screen and (max-width: 600px) {
+	.bar {
+		display: block;
+	}
+
+	nav {
+		position: absolute;
+		margin-top: 400px;
+		width: 100%;
+		background-color: #3a5a40;
+		border-radius: 10px;
+		overflow: hidden;
+		border: solid 1px lightgray;
+		display: none;
+		z-index: 1;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	nav ul li {
+		padding: 20px 20px;
+		margin: 0;
+	}
+
+	nav ul li:hover {
+		/* background-color: #e8e8e8; */
+		background-color: #344e41;
+		color: #000;
+	}
+
+	.dis {
+		display: none;
+	}
+}
+
+#calendar {
+	/* max-width: 100px; */
+	margin: 20px auto;
+	/* font-family: 'Arial', sans-serif; */
+}
+
+table {
+	width: 1000px;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #ddd;
+}
+
+th {
+	background-color: #3a5a40 !important;
+	color: white;
+}
+
+.current-date {
+	background-color: #b0d4a1 !important;
+	/* เปลี่ยนสีพื้นหลังสำหรับวันปัจจุบัน */
+	color: #3a5a40 !important;
+	/* เปลี่ยนสีตัวอักษรสำหรับวันปัจจุบัน */
+	font-weight: bold;
+}
+
+.current-date:hover {
+	background-color: #344e41 !important;
+	/* เปลี่ยนสีพื้นหลังสำหรับวันปัจจุบัน */
+	color: #fff !important;
+	/* เปลี่ยนสีตัวอักษรสำหรับวันปัจจุบัน */
+	font-weight: bold;
+}
+
+.background-th {
+	background-color: #3a5a40 !important;
+}
+
+::placeholder {
+	font-size: 8px;
+}
